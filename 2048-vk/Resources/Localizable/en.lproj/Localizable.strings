@@ -1,0 +1,12 @@
+/* 
+  Strings.strings
+  2048-vk
+
+  Created by admin on 10.05.2023.
+  
+*/
+
+"you_won" = "You won!";
+"game_over" = "Game over!";
+"score" = "Score";
+"record" = "Record";
