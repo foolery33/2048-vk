@@ -7,7 +7,11 @@
 
 import Foundation
 
-final class GetCellNumberFromNumberUseCase {
+protocol GetCellNumberFromNumberProtocol {
+    func getCellNumber(_ number: Int) -> CellNumber
+}
+
+final class GetCellNumberFromNumberUseCase: GetCellNumberFromNumberProtocol {
     func getCellNumber(_ number: Int) -> CellNumber {
         switch number {
         case 2:

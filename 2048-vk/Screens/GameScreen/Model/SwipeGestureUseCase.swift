@@ -9,9 +9,9 @@ import UIKit
 
 final class SwipeGestureUseCase {
     
-    var getCellNumberFromNumberUseCase: GetCellNumberFromNumberUseCase
-    
-    init(getCellNumberFromNumberUseCase: GetCellNumberFromNumberUseCase) {
+    var getCellNumberFromNumberUseCase: GetCellNumberFromNumberProtocol
+
+    init(getCellNumberFromNumberUseCase: GetCellNumberFromNumberProtocol) {
         self.getCellNumberFromNumberUseCase = getCellNumberFromNumberUseCase
     }
     
@@ -144,7 +144,7 @@ final class SwipeGestureUseCase {
     }
     
     func onDownSwipe(cells: inout [GameCellViewProtocol], dimension: Int) -> Bool {
-        
+
         var newCells: [GameCellViewProtocol] = []
         var mergedIndicies: [Int] = []
         cells = cells.sorted { $0.position.1 > $1.position.1 }
@@ -170,7 +170,7 @@ final class SwipeGestureUseCase {
                 }
             }
         }
-        
+
         var movedCells: [Int] = []
         for i in 0..<cells.count {
             if movedCells.contains(i) {
@@ -235,9 +235,9 @@ final class SwipeGestureUseCase {
                 }
             }
         }
-        
+
         cells.append(contentsOf: newCells)
-        
+
         if cells.count != startedCells.count {
             return true
         }

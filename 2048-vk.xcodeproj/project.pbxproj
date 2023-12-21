@@ -33,6 +33,8 @@
 		84C3F8162A0769DA001AA4A4 /* SwipeGestureUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C3F8152A0769DA001AA4A4 /* SwipeGestureUseCase.swift */; };
 		84C3F8182A079613001AA4A4 /* GetCellNumberFromNumberUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C3F8172A079613001AA4A4 /* GetCellNumberFromNumberUseCase.swift */; };
 		84C936362A0BD2BE00513404 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C936352A0BD2BE00513404 /* Colors.swift */; };
+		84D5CC662B345C5F0076EF01 /* SwipeGestureUseCaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D5CC652B345C5F0076EF01 /* SwipeGestureUseCaseTest.swift */; };
+		84D5CC702B34CEA00076EF01 /* MockedGetCellNumberFromNumberUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D5CC6F2B34CEA00076EF01 /* MockedGetCellNumberFromNumberUseCase.swift */; };
 		84F69E682A0639B300711CB8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F69E672A0639B300711CB8 /* AppDelegate.swift */; };
 		84F69E6A2A0639B300711CB8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F69E692A0639B300711CB8 /* SceneDelegate.swift */; };
 		84F69E6C2A0639B300711CB8 /* PrepareGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F69E6B2A0639B300711CB8 /* PrepareGameViewController.swift */; };
@@ -46,6 +48,16 @@
 		84F69EAB2A06C05900711CB8 /* GameCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F69EAA2A06C05900711CB8 /* GameCoordinator.swift */; };
 		84F69EB42A06C28500711CB8 /* PrepareGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F69EB32A06C28500711CB8 /* PrepareGameViewModel.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84D5CC672B345C5F0076EF01 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84F69E5C2A0639B300711CB8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84F69E632A0639B300711CB8;
+			remoteInfo = "2048-vk";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		8430FCAF2A0BE4EC003BAA3D /* GameCellModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GameCellModel.xcdatamodel; sourceTree = "<group>"; };
@@ -75,6 +87,9 @@
 		84C3F8152A0769DA001AA4A4 /* SwipeGestureUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeGestureUseCase.swift; sourceTree = "<group>"; };
 		84C3F8172A079613001AA4A4 /* GetCellNumberFromNumberUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCellNumberFromNumberUseCase.swift; sourceTree = "<group>"; };
 		84C936352A0BD2BE00513404 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		84D5CC632B345C5F0076EF01 /* 2048-vkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "2048-vkTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84D5CC652B345C5F0076EF01 /* SwipeGestureUseCaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeGestureUseCaseTest.swift; sourceTree = "<group>"; };
+		84D5CC6F2B34CEA00076EF01 /* MockedGetCellNumberFromNumberUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedGetCellNumberFromNumberUseCase.swift; sourceTree = "<group>"; };
 		84F69E642A0639B300711CB8 /* 2048-vk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "2048-vk.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84F69E672A0639B300711CB8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84F69E692A0639B300711CB8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +107,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		84D5CC602B345C5F0076EF01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		84F69E612A0639B300711CB8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -187,10 +209,28 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		84D5CC642B345C5F0076EF01 /* 2048-vkTests */ = {
+			isa = PBXGroup;
+			children = (
+				84D5CC6E2B34CE8E0076EF01 /* Mocks */,
+				84D5CC652B345C5F0076EF01 /* SwipeGestureUseCaseTest.swift */,
+			);
+			path = "2048-vkTests";
+			sourceTree = "<group>";
+		};
+		84D5CC6E2B34CE8E0076EF01 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				84D5CC6F2B34CEA00076EF01 /* MockedGetCellNumberFromNumberUseCase.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 		84F69E5B2A0639B300711CB8 = {
 			isa = PBXGroup;
 			children = (
 				84F69E662A0639B300711CB8 /* 2048-vk */,
+				84D5CC642B345C5F0076EF01 /* 2048-vkTests */,
 				84F69E652A0639B300711CB8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -199,6 +239,7 @@
 			isa = PBXGroup;
 			children = (
 				84F69E642A0639B300711CB8 /* 2048-vk.app */,
+				84D5CC632B345C5F0076EF01 /* 2048-vkTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -295,6 +336,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		84D5CC622B345C5F0076EF01 /* 2048-vkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84D5CC692B345C5F0076EF01 /* Build configuration list for PBXNativeTarget "2048-vkTests" */;
+			buildPhases = (
+				84D5CC5F2B345C5F0076EF01 /* Sources */,
+				84D5CC602B345C5F0076EF01 /* Frameworks */,
+				84D5CC612B345C5F0076EF01 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84D5CC682B345C5F0076EF01 /* PBXTargetDependency */,
+			);
+			name = "2048-vkTests";
+			productName = "2048-vkTests";
+			productReference = 84D5CC632B345C5F0076EF01 /* 2048-vkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		84F69E632A0639B300711CB8 /* 2048-vk */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84F69E782A0639B400711CB8 /* Build configuration list for PBXNativeTarget "2048-vk" */;
@@ -321,9 +380,13 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1420;
+				LastSwiftUpdateCheck = 1510;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
+					84D5CC622B345C5F0076EF01 = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = 84F69E632A0639B300711CB8;
+					};
 					84F69E632A0639B300711CB8 = {
 						CreatedOnToolsVersion = 14.2;
 					};
@@ -346,11 +409,19 @@
 			projectRoot = "";
 			targets = (
 				84F69E632A0639B300711CB8 /* 2048-vk */,
+				84D5CC622B345C5F0076EF01 /* 2048-vkTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		84D5CC612B345C5F0076EF01 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		84F69E622A0639B300711CB8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -364,6 +435,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		84D5CC5F2B345C5F0076EF01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84D5CC702B34CEA00076EF01 /* MockedGetCellNumberFromNumberUseCase.swift in Sources */,
+				84D5CC662B345C5F0076EF01 /* SwipeGestureUseCaseTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		84F69E602A0639B300711CB8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -408,6 +488,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		84D5CC682B345C5F0076EF01 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84F69E632A0639B300711CB8 /* 2048-vk */;
+			targetProxy = 84D5CC672B345C5F0076EF01 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		8430FCBA2A0BEA04003BAA3D /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
@@ -429,6 +517,53 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		84D5CC6A2B345C5F0076EF01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H29F6RLPN8;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "foolery.-048-vkTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/2048-vk.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/2048-vk";
+			};
+			name = Debug;
+		};
+		84D5CC6B2B345C5F0076EF01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H29F6RLPN8;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "foolery.-048-vkTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/2048-vk.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/2048-vk";
+			};
+			name = Release;
+		};
 		84F69E762A0639B400711CB8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -550,8 +685,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "2048-vk/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -566,6 +703,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "foolery.-048-vk";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -577,8 +715,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "2048-vk/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -593,6 +733,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "foolery.-048-vk";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -602,6 +743,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		84D5CC692B345C5F0076EF01 /* Build configuration list for PBXNativeTarget "2048-vkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84D5CC6A2B345C5F0076EF01 /* Debug */,
+				84D5CC6B2B345C5F0076EF01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		84F69E5F2A0639B300711CB8 /* Build configuration list for PBXProject "2048-vk" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Foundation
 
 protocol GameCellViewProtocol: UIView {
     var id: UUID { get }
@@ -13,9 +14,19 @@ protocol GameCellViewProtocol: UIView {
     var position: (Int, Int) { get set }
     var appearanceProvider: AppearanceProviderRepository? { get set }
     func configureAppearance()
+    func areEqual(_ firstObject: GameCellViewProtocol, _ secondObject: GameCellViewProtocol) -> Bool
+    
 }
 
 class GameCellView: UIView, GameCellViewProtocol {
+    func areEqual(_ firstObject: GameCellViewProtocol, _ secondObject: GameCellViewProtocol) -> Bool {
+        if firstObject.number == secondObject.number &&
+            firstObject.position == secondObject.position {
+            return true
+        }
+        return false
+    }
+    
 
     var number: CellNumber
     var position: (Int, Int)
